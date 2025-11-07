@@ -1,18 +1,87 @@
 Gestión de Usuarios:
+Core INICIAL
+Usuarios
+Creación de entidad Usuario
 
-Autenticación
-Registro
-Recuperación de Cuenta
-Cambiar contraseña
-2FA y OAuth síncrono con email
-Cumplimiento de normativa LOPD
 
-Pasos para cumplir este objetivo
+Creación de Value Object Email
 
-Backend:
-Definición de bases de datos: Separación entre User y UserData. Roles y Permisos.
-Montar estructura de microservicios general y arquitectura de software en backend.
-Implementación del microservicio de auth.
+
+Creación de interfaz IUsuarioRepository
+
+
+Implementación de UserManagerService
+
+
+Implementación de lógica de hasheo de contraseñas
+
+
+Roles y Claims
+Creación de entidad Rol
+
+
+Creación de relación Usuario-Rol
+
+
+Creación de interfaz IRolRepository
+
+
+Definición de claims y policies base
+
+
+Autenticación JWT
+Creación de endpoints de registro y login
+
+
+Implementación de generación y validación de JWT
+
+
+Configuración de middleware de autenticación y autorización
+
+
+Gestión de Tenants
+Creación de entidad Tenant
+
+
+Creación de relación Usuario-Tenant
+
+
+Creación de interfaz ITenantProvider
+
+
+Implementación de TenantProvider
+
+
+Email básico
+Creación de interfaz IEmailService
+
+
+Implementación de servicio de email fake/dev
+
+
+Manejo de errores global
+Implementación de middleware de manejo de errores
+
+
+EF Core y PostgreSQL
+Configuración de AppDbContext
+
+
+Configuración de conexión a PostgreSQL
+
+
+Creación de migraciones iniciales
+
+
+Implementación de repositorios concretos y UnitOfWork
+
+
+Configuración y secretos
+Definición de settings para email, JWT y DB
+
+
+Preparación de gestión de secretos en entorno local
+
 
 
 Arquitectura principal de software
