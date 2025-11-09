@@ -26,8 +26,7 @@ namespace HexagonalModular.Infrastructure.Repositories
 
         public async Task<User> GetByEmailAsync(string email)
         {
-            return await _dbContext.Users
-                .FirstOrDefaultAsync(u => u.Email.Value.ToLower() == email.ToLower());
+            return await _dbContext.Users.FirstOrDefaultAsync(u => u.Email.Value.ToLower() == email.ToLower());
         }
 
         public async Task AddAsync(User usuario)

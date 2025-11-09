@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj": {}
+    "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj": {
+    "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj",
         "projectName": "HexagonalModular.Application",
-        "projectPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj",
+        "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj",
         "packagesPath": "C:\\Users\\Axel1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Application\\obj\\",
+        "outputPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj": {
-                "projectPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj"
+              "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj": {
+                "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj": {
+    "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj",
         "projectName": "HexagonalModular.Core",
-        "projectPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj",
+        "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj",
         "packagesPath": "C:\\Users\\Axel1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\obj\\",
+        "outputPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -106,6 +106,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.34.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -126,14 +132,14 @@
         }
       }
     },
-    "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj": {
+    "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj",
         "projectName": "HexagonalModular.Infrastructure",
-        "projectPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Infrastructure\\HexagonalModular.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Axel1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -154,11 +160,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj": {
-                "projectPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj"
+              "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj": {
+                "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Application\\HexagonalModular.Application.csproj"
               },
-              "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj": {
-                "projectPath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj"
+              "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj": {
+                "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Core\\HexagonalModular.Core.csproj"
               }
             }
           }

@@ -9,12 +9,12 @@ namespace HexagonalModular.Infrastructure.Auth
 {
     public class BCryptPasswordHasher : IPasswordHasher
     {
-        public string HashPassword(string password)
+        public string Hash(string password)
         {
             return BCrypt.Net.BCrypt.HashPassword(password);
         }
 
-        public bool VerifyPassword(string hash, string password)
+        public bool Verify(string hash, string password)
         {
             return BCrypt.Net.BCrypt.Verify(password, hash);
         }

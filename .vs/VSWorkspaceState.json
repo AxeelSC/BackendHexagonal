@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HexagonalModular.API",
+    "\\HexagonalModular.API\\Controllers",
+    "\\HexagonalModular.Infrastructure",
+    "\\HexagonalModular.Infrastructure\\Persistence",
+    "\\HexagonalModular.Infrastructure\\Repositories"
+  ],
+  "SelectedNode": "\\HexagonalModular.API\\Controllers\\AuthController.cs",
+  "PreviewInSolutionExplorer": false
+}

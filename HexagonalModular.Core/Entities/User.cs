@@ -1,4 +1,5 @@
-﻿using HexagonalModular.Core.ValueObjects;
+﻿using HexagonalModular.Core.Shared;
+using HexagonalModular.Core.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace HexagonalModular.Core.Entities
 
         public User(string name, Email email, string passwordHash)
         {
-            Id = Guid.NewGuid();
+            Id = GuidFactory.NewSequential();
             Name = name;
             Email = email;
             PasswordHash = passwordHash;
@@ -28,13 +29,10 @@ namespace HexagonalModular.Core.Entities
 
         public void ChangePassword(string newHash)
         {
-            PasswordHash = newHash;
+            PasswordHash = newHash ?? throw new ArgumentNullException(nameof(newHash));
         }
 
-        public void Deactivate()
-        {
-            IsActive = false;
-        }
+        public void Deactivate() => IsActive = false;
     }
 }
 

@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Exceptions\" />
+    <Folder Include="Interfaces %28Ports%29\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.34.0" />
   </ItemGroup>
 
 </Project>
