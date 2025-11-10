@@ -1,5 +1,5 @@
-﻿using HexagonalModular.Core.Entities;
-using HexagonalModular.Core.Interfaces;
+﻿using HexagonalModular.Application.Interfaces.User;
+using HexagonalModular.Core.Entities;
 using HexagonalModular.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System;

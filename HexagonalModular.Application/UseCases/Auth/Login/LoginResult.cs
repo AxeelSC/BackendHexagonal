@@ -5,10 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HexagonalModular.Application.Interfaces
+namespace HexagonalModular.Application.UseCases.Auth.Login
 {
-    public interface IJwtTokenGenerator
-    {
-        string GenerateToken(User user);
-    }
+    public record LoginResult(AuthSession Session);
 }

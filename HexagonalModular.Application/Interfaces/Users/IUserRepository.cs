@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using HexagonalModular.Core.Entities;
 using System.Threading.Tasks;
 
-namespace HexagonalModular.Core.Interfaces
+namespace HexagonalModular.Application.Interfaces.Users
 {
     public interface IUserRepository
     {
@@ -15,7 +15,7 @@ namespace HexagonalModular.Core.Interfaces
         Task<User> GetByEmailAsync(string email);
         Task AddAsync(User usuario);
         Task<bool> ExistsByEmailAsync(string email);
-  
+
     }
 }
 

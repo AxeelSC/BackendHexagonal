@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace HexagonalModular.Core.ValueObjects
 {
-    public class Email
+    public sealed class Email
     {
         public string Value { get; }
 

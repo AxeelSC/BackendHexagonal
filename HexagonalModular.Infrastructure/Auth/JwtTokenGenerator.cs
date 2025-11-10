@@ -1,11 +1,11 @@
-﻿using HexagonalModular.Application.Interfaces;
-using HexagonalModular.Core.Entities;
+﻿using HexagonalModular.Core.Entities;
 using Microsoft.Extensions.Configuration;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using HexagonalModular.Application.Interfaces.Auth;
 
 namespace HexagonalModular.Infrastructure.Auth
 {

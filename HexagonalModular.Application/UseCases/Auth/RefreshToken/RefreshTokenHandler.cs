@@ -1,4 +1,4 @@
-﻿using HexagonalModular.Core.Interfaces;
+﻿using HexagonalModular.Application.Interfaces.User;
 using HexagonalModular.Core.Interfaces__Ports_;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HexagonalModular.Application.UseCases.Auth
+namespace HexagonalModular.Application.UseCases.Auth.RefreshToken
 {
     public class RefreshTokenHandler
     {

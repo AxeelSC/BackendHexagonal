@@ -1,8 +1,11 @@
 ﻿using HexagonalModular.API.DTOs.Auth;
 using HexagonalModular.API.Models;
 using HexagonalModular.API.Models.Auth;
-using HexagonalModular.Application.UseCases.Auth;
+using HexagonalModular.Application.UseCases.Auth.Login;
+using HexagonalModular.Application.UseCases.Auth.RefreshToken;
+using HexagonalModular.Application.UseCases.Auth.Register;
 using HexagonalModular.Core.Entities;
+using HexagonalModular.Core.ValueObjects;
 using Microsoft.AspNetCore.Mvc;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
@@ -26,7 +29,6 @@ namespace HexagonalModular.API.Controllers
             _refreshTokenHandler = refreshTokenHandler;
         }
 
-        // Login endpoint
         [HttpPost("login")]
         [ProducesResponseType(typeof(ApiResponse<LoginResponseDto>), 200)]
         [ProducesResponseType(typeof(ApiResponse<object>), 400)]
@@ -38,7 +40,8 @@ namespace HexagonalModular.API.Controllers
 
             try
             {
-                var command = new LoginCommand(request.Email, request.Password);
+                var emailVo = Email.Create(request.Email);
+                var command = new LoginCommand(emailVo, request.Password);
                 var result = await _loginHandler.HandleAsync(command);
 
                 var response = new LoginResponseDto
@@ -65,7 +68,6 @@ namespace HexagonalModular.API.Controllers
             }
         }
 
-        // Register endpoint
         [HttpPost("register")]
         [ProducesResponseType(typeof(ApiResponse<RegisterResponseDto>), 200)]
         [ProducesResponseType(typeof(ApiResponse<object>), 400)]
@@ -75,24 +77,13 @@ namespace HexagonalModular.API.Controllers
             {
                 return BadRequest(ApiResponse<RegisterResponseDto>.ErrorResult("Invalid input data"));
             }
+            var emailVO = Email.Create(request.Email);
 
-            var response = await _registerHandler.HandleAsync(request.Username, request.Email, request.Password);
+            var registerCommand = new RegisterCommand(request.Username, emailVO.Value, request.Password);
+
+            var result = await _registerHandler.HandleAsync(registerCommand);
+
             return Ok(ApiResponse<RegisterResponseDto>.SuccessResult(response, "Registration successful"));
-        }
-
-        // Refresh Token endpoint
-        [HttpPost("refresh-token")]
-        [ProducesResponseType(typeof(ApiResponse<RefreshTokenResponseDto>), 200)]
-        [ProducesResponseType(typeof(ApiResponse<object>), 400)]
-        public async Task<ActionResult<ApiResponse<RefreshTokenResponseDto>>> RefreshToken([FromBody] RefreshTokenRequestDto request)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ApiResponse<RefreshTokenResponseDto>.ErrorResult("Invalid input data"));
-            }
-
-            var response = await _refreshTokenHandler.HandleAsync(request.RefreshToken);
-            return Ok(ApiResponse<RefreshTokenResponseDto>.SuccessResult(response, "Token refreshed successfully"));
         }
     }
 }

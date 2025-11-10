@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using HexagonalModular.Core.Entities;
 using Microsoft.Extensions.Configuration;
+using HexagonalModular.Application.Interfaces.Auth;
 
 namespace HexagonalModular.Infrastructure.Auth
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HexagonalModular.Core.Interfaces__Ports_
+namespace HexagonalModular.Application.Interfaces.Security
 {
     public interface IPasswordHasher
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HexagonalModular.Application.Interfaces
+namespace HexagonalModular.Application.Interfaces.Auth
 {
     public interface IRefreshTokenRepository
     {

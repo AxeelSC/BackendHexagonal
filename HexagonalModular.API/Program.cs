@@ -1,4 +1,3 @@
-using HexagonalModular.Core.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using HexagonalModular.Infrastructure.Auth;
 using HexagonalModular.Infrastructure.Persistence;
@@ -6,8 +5,10 @@ using HexagonalModular.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using HexagonalModular.Application.Interfaces;
 using HexagonalModular.Core.Interfaces__Ports_;
+using HexagonalModular.Application.Interfaces.Auth;
+using HexagonalModular.Application.Interfaces.Security;
+using HexagonalModular.Application.Interfaces.User;
 
 var builder = WebApplication.CreateBuilder(args);
 

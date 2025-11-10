@@ -1,4 +1,4 @@
-﻿using HexagonalModular.Core.Entities;
+﻿using HexagonalModular.Application.UseCases.Auth.Login;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +7,5 @@ using System.Threading.Tasks;
 
 namespace HexagonalModular.Application.UseCases.Auth
 {
-    public record LoginCommand(string Email, string Password);
-
+    public record AuthSession(string AccessToken, string RefreshToken, LoggedUserModel User);
 }
