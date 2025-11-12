@@ -10,4 +10,8 @@
     <ProjectReference Include="..\HexagonalModular.Core\HexagonalModular.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Peperoni\" />
+  </ItemGroup>
+
 </Project>
