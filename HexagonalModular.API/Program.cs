@@ -1,15 +1,14 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using HexagonalModular.Infrastructure.Auth;
-using HexagonalModular.Infrastructure.Persistence;
-using HexagonalModular.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using HexagonalModular.Application.Interfaces.User;
-using HexagonalModular.Application.Authentication.Interfaces;
-using HexagonalModular.Application.Security;
-using HexagonalModular.Application;
-using HexagonalModular.Infrastructure.User;
+using HexagonalModular.Application.Identity.Common.Ports;
+using HexagonalModular.Application.Identity.Common.Security;
+using HexagonalModular.Application.Identity.Common.Persistence;
+using HexagonalModular.Infrastructure.Identity.Persistence;
+using HexagonalModular.Infrastructure.Identity.Security;
+using HexagonalModular.Infrastructure.Identity.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -73,7 +72,7 @@ builder.Services.AddAuthorization();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
 builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IIdentityUnitOfWork, IdentityUnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

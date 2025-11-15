@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Peperoni\" />
+    <Folder Include="Identity\AccountManagement\ConfirmEmail\" />
+    <Folder Include="Identity\Security\LockAccount\" />
+    <Folder Include="Identity\Security\TwoFactor\" />
   </ItemGroup>
 
 </Project>

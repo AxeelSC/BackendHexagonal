@@ -12,8 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
-    <Folder Include="Email\" />
+    <Folder Include="Auth\" />
+    <Folder Include="Identity\Persistence\Configurations\" />
+    <Folder Include="Identity\Persistence\Migrations\" />
   </ItemGroup>
 
   <ItemGroup>
