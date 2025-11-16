@@ -112,3 +112,24 @@ Saber si hay recursos o modulos designados para ciertas areas, relacionados o pa
 Auditoria basica / BaseEntity
 
 Notificaciones?
+
+Resumen de organizacion por carpetas DDD, Hexagonal y Clean.
+Api: Organiza por bounded context → modelo de dominio. El corazon: las reglas, entidades y VO.
+Porque aquí vive el lenguaje del negocio. Debe estar aislado de detalles tecnicos
+Ejemplo: Domain/Core --> Identity ---> Entities, VO, etc.
+
+Application: organiza por feature → caso de uso. Facil acceso con pocos clicks. Es el Qué. 
+Porque aquí vive la lógica del negocio. Orquestas flujos de negocio usando domain y puertos.
+Ejemplo: Application --> Auth --> Login, Register, etc
+
+Infra: organiza por bounded context → tipo técnico. Es el cómo.
+Porque los repositorios y el DbContext no pertenecen a un caso de uso, sino a todo el bounded context.
+Ejemplo: Infra --> Persistence, Security, Messaging, etc (Adaptadores tecnicos)
+
+Api/Presentacion: Organiza por bounded context → feature (controller). Es la cara pública: HTTP, JSON, endpoints, controladores.
+Porque expone los casos de uso al exterior. Es el traductor para fuera.
+Ejemplo: Api --> Auth --> AuthController, Request, Responses....
+
+Test: Organiza los tests “mirroring” Application/Domain
+Porque quieres que sea muy fácil encontrar los tests de un caso de uso concreto
+Ejemplo: Identity --> Auth --> Login, Register --> LoginHandlerTest, RegisterHandlerTest...
