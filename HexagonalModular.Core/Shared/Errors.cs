@@ -54,12 +54,15 @@ namespace HexagonalModular.Core.Shared
 
         public static class Users
         {
+            public const string EmailAlreadyInUseCode = "USER.EMAIL_ALREADY_IN_USE";
+            public const string NotFoundByEmailCode = "USER.NOT_FOUND_BY_EMAIL";
+
             public static Error EmailAlreadyInUse(string email) =>
-                new("USER.EMAIL_ALREADY_IN_USE",
+                new(EmailAlreadyInUseCode,
                     $"User registration failed: email '{email}' is already in use.");
 
             public static Error NotFoundByEmail(string email) =>
-                new("USER.NOT_FOUND_BY_EMAIL",
+                new(NotFoundByEmailCode,
                     $"User lookup failed: no user found with email '{email}'.");
         }
         private static string Truncate(string value, int max = 10)

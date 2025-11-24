@@ -71,7 +71,7 @@ namespace HexagonalModular.API.Identity.Auth
                      error.Message,
                      traceId);
 
-                if (error.Code == Errors.Authentication.InvalidCredentials.Code)
+                if (error.Code == Errors.Authentication.InvalidCredentialsCode)
                 {
                     return Unauthorized(ApiResponse<LoginResponseDto>.ErrorResult(
                         error.Code,

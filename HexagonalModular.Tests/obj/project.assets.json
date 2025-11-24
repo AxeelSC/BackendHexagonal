@@ -5932,9 +5932,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Tests\\HexagonalModular.Tests.csproj",
-      "projectName": "HexagonalModular.Tests",
-      "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Tests\\HexagonalModular.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Tests\\HexagonalModular.UnitTest.csproj",
+      "projectName": "HexagonalModular.UnitTest",
+      "projectPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Tests\\HexagonalModular.UnitTest.csproj",
       "packagesPath": "C:\\Users\\Axel1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Axel1\\Desktop\\Axel_PorfolioWeb\\HexagonalModular\\HexagonalModular.Tests\\obj\\",
       "projectStyle": "PackageReference",
